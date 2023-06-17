@@ -1,0 +1,26 @@
+.wrapper
+    display: flex
+    justify-content: center
+.main
+    width: 56%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    .sortWrapper
+        width: 50%
+        display: flex
+        justify-content: space-between
+    .sortItem
+        cursor: pointer
+        padding-top: 15px
+    .active
+        border-top: 2px solid white
+    .postsWrapper
+        width: 100%
+        margin-top: 20px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        grid-column-gap: 0px
+        grid-row-gap: 12px

@@ -1,0 +1,134 @@
+.wrapper
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background: rgb(2,0,36)
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(33,33,34,1) 13%, rgba(195,205,208,1) 97%)
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    .main
+        width: 90vw
+        height: 95vh
+        background-color: inherit
+        display: flex
+        justify-content: center
+        
+    .center
+        width: 33%
+        display: flex
+        align-items: center
+        background-color: inherit
+        justify-content: center
+        position: relative
+        
+        .avatar
+            width: 40px
+            height: 40px
+            object-fit: cover
+            position: absolute
+            left: 50px
+            top: 40px
+            border-radius: 50%
+        .avatarText
+            position: absolute
+            left: 100px
+            top: 50px
+            background: none
+            font-size: 15px
+            span
+                background: none
+        .navRight
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: inherit
+            margin-left: 6px
+            cursor: pointer
+            &:hover
+                opacity: 0.7
+    
+        .navLeft
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: inherit
+            margin-right: 6px
+            cursor: pointer
+            &:hover
+                opacity: 0.7
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 10px
+            
+    .side
+        display: flex
+        justify-content: space-around
+        width: 33%
+        height: 50%
+        align-self: center
+        background-color: inherit
+        .sideItem
+            background-color: inherit
+            width: 45%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 10px
+                opacity: 0.6
+    .close
+        position: absolute
+        right: 80px
+        top: 40px
+        width: 40px
+        cursor: pointer
+        background-color: inherit
+// stories Main
+
+
+ #000   
+
+
+.fillLine 
+  position: absolute
+  margin-left: 40px
+  border-radius: 2px
+  top: 20px
+  left: 0
+  height: 2px
+  background-color: #ffffff 
+  animation: fillWidth 2s linear forwards 
+  z-index: 1
+.fillLineBg 
+  position: absolute
+  margin-left: 40px
+  border-radius: 2px
+  width: 490px
+  top: 20px
+  left: 0
+  height: 2px
+  background-color: #777474 
+.reset
+  animation: none
+
+  
+
+
+
+
+@keyframes fillWidth 
+  0% 
+    width: 0
+  
+  100% 
+    width: 490px
+
+  
+
+  
+
+    

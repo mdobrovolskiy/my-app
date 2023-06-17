@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+
+import ProfilePage from './pages/ProfilePage'
+
+import StoriesPage from './pages/StoriesPage'
+import SignUp from './pages/SignUp'
+import Messages from './pages/Messages'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="main">
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/stories" element={<StoriesPage />} />
+          <Route path="/:name" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/messages/:name" element={<Messages />} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
